@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct PhotoPickerView: View {
-    @EnvironmentObject var vm : VieModel
+    @State private var image: UIImage?
     @Environment(\.dismiss) var dismiss
+    @State private var showPicker = false
+    @State var source: Picker.Source = .library
+    @State private var imageName = ""
+    @State private var showCameraAlert = false
+    @State private var cameraError: Picker.CameraErrorType?
+    
+    @EnvironmentObject var dataController: DataController
+    @Environment(\.managedObjectContext) var managedObjectContext
+    
     
     var body: some View {
         NavigationView {
             VStack {
-                if let image = vm.image {
+                if let image = image {
                     Image(uiImage: image)
                         .resizable()
                         .scaledToFit()
@@ -29,23 +38,23 @@ struct PhotoPickerView: View {
                 }
                 
                 VStack {
-                    TextField("Foto Adı", text: $vm.imageName)
+                    TextField("Foto Adı", text: $imageName)
                     HStack {
                         Button {
-                            vm.source = .camera
-                            vm.showPhotoPicker()
+                            source = .camera
+                            showPhotoPicker()
                         } label: {
                             ButtonLabelView(systemImageName: "camera", textName:"Camera")
                         }
-                        .alert("Error",isPresented: $vm.showCameraAlert) {
-                            vm.cameraError?.button
+                        .alert("Error",isPresented: $showCameraAlert) {
+                            cameraError?.button
                         } message: {
-                            Text(vm.cameraError?.message ?? "")
+                            Text(cameraError?.message ?? "")
                         }
                         
                         Button {
-                            vm.source = .library
-                            vm.showPicker = true
+                            source = .library
+                            showPicker = true
                         } label: {
                             ButtonLabelView(systemImageName: "photo", textName: "Photos")
                         }
@@ -53,9 +62,19 @@ struct PhotoPickerView: View {
                     }
                     
                     Button {
-                        vm.addImage(vm.imageName, image: vm.image!)
+                      let imageEntity = ImageEntity(context: managedObjectContext)
+                        imageEntity.name = imageName
+                        imageEntity.id = UUID()
+                        imageEntity.latitude = 39.941959
+                        imageEntity.longitude = 32.8077479
+                        
+                        guard let savedImage = image else {
+                            return
+                        }
+                        imageEntity.image = savedImage.jpegData(compressionQuality: 0.9)
+                     
+                        dataController.save()
                         dismiss()
-            
                     } label: {
                         ButtonLabelView(systemImageName: "square.and.arrow.down.fill", textName: "Save")
                     }
@@ -65,18 +84,32 @@ struct PhotoPickerView: View {
                Spacer()
             }.navigationTitle("Foto Seç")
             .navigationBarTitleDisplayMode(.inline)            
-            .sheet(isPresented: $vm.showPicker) {
-                ImagePicker(sourceType: vm.source == .library ? .photoLibrary : .camera, selectedImage: $vm.image)
+            .sheet(isPresented: $showPicker) {
+                ImagePicker(sourceType: source == .library ? .photoLibrary : .camera, selectedImage: $image)
         }
         }
     }
+    
+    func showPhotoPicker() {
+        do {
+            if source == .camera {
+                try Picker.checkPermissions()
+                showPicker = true
+            }
+          
+        } catch  {
+            showCameraAlert = true
+            cameraError = Picker.CameraErrorType(error: error as! Picker.PickerError)
+        }
+    }
+    
 }
 
 
 struct PhotoPickerView_Previews: PreviewProvider {
     static var previews: some View {
         PhotoPickerView()
-            .environmentObject(VieModel())
+        
     }
 }
  

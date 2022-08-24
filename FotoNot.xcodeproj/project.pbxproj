@@ -9,16 +9,15 @@
 /* Begin PBXBuildFile section */
 		F70947DF284C925E00BA7C7D /* MapPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70947DE284C925E00BA7C7D /* MapPhotoView.swift */; };
 		F70947E1284C9C1500BA7C7D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70947E0284C9C1500BA7C7D /* LocationManager.swift */; };
+		F779FB3528B00C6E00F8F06D /* ImageModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F779FB3328B00C6E00F8F06D /* ImageModel.xcdatamodeld */; };
+		F779FB3928B00E2600F8F06D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F779FB3828B00E2600F8F06D /* DataController.swift */; };
+		F779FB3B28B016CF00F8F06D /* ImageEntity - CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F779FB3A28B016CF00F8F06D /* ImageEntity - CoreDataHelper.swift */; };
 		F7802749284A960C00B68778 /* FotoNotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7802748284A960C00B68778 /* FotoNotApp.swift */; };
-		F780274B284A960C00B68778 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F780274A284A960C00B68778 /* ContentView.swift */; };
 		F780274D284A960D00B68778 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F780274C284A960D00B68778 /* Assets.xcassets */; };
 		F7802750284A960D00B68778 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F780274F284A960D00B68778 /* Preview Assets.xcassets */; };
 		F780275C284A96F900B68778 /* ImagePickerUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F780275B284A96F900B68778 /* ImagePickerUIView.swift */; };
-		F780275E284A9DE500B68778 /* FileManager + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F780275D284A9DE400B68778 /* FileManager + Extension.swift */; };
 		F7802760284A9FB200B68778 /* ImageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F780275F284A9FB200B68778 /* ImageError.swift */; };
-		F7802762284AAAC400B68778 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7802761284AAAC400B68778 /* ImageModel.swift */; };
 		F7802764284AAC4800B68778 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7802763284AAC4800B68778 /* ListView.swift */; };
-		F7802766284AACBA00B68778 /* ListView- ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7802765284AACBA00B68778 /* ListView- ViewModel.swift */; };
 		F7E83E3A284B399B0056B925 /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E83E39284B399B0056B925 /* Picker.swift */; };
 		F7E83E3C284B408A0056B925 /* PhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E83E3B284B408A0056B925 /* PhotoPickerView.swift */; };
 		F7E83E40284B6D440056B925 /* ButtonLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E83E3F284B6D440056B925 /* ButtonLabelView.swift */; };
@@ -28,17 +27,16 @@
 /* Begin PBXFileReference section */
 		F70947DE284C925E00BA7C7D /* MapPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPhotoView.swift; sourceTree = "<group>"; };
 		F70947E0284C9C1500BA7C7D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		F779FB3428B00C6E00F8F06D /* ImageModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ImageModel.xcdatamodel; sourceTree = "<group>"; };
+		F779FB3828B00E2600F8F06D /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		F779FB3A28B016CF00F8F06D /* ImageEntity - CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageEntity - CoreDataHelper.swift"; sourceTree = "<group>"; };
 		F7802745284A960C00B68778 /* FotoNot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FotoNot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7802748284A960C00B68778 /* FotoNotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoNotApp.swift; sourceTree = "<group>"; };
-		F780274A284A960C00B68778 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F780274C284A960D00B68778 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F780274F284A960D00B68778 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F780275B284A96F900B68778 /* ImagePickerUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerUIView.swift; sourceTree = "<group>"; };
-		F780275D284A9DE400B68778 /* FileManager + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager + Extension.swift"; sourceTree = "<group>"; };
 		F780275F284A9FB200B68778 /* ImageError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageError.swift; sourceTree = "<group>"; };
-		F7802761284AAAC400B68778 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		F7802763284AAC4800B68778 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
-		F7802765284AACBA00B68778 /* ListView- ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListView- ViewModel.swift"; sourceTree = "<group>"; };
 		F7E83E39284B399B0056B925 /* Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
 		F7E83E3B284B408A0056B925 /* PhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerView.swift; sourceTree = "<group>"; };
 		F7E83E3F284B6D440056B925 /* ButtonLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLabelView.swift; sourceTree = "<group>"; };
@@ -56,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F779FB3728B00E0100F8F06D /* CoreDataHelper */ = {
+			isa = PBXGroup;
+			children = (
+				F779FB3828B00E2600F8F06D /* DataController.swift */,
+				F779FB3A28B016CF00F8F06D /* ImageEntity - CoreDataHelper.swift */,
+			);
+			path = CoreDataHelper;
+			sourceTree = "<group>";
+		};
 		F780273C284A960C00B68778 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +88,7 @@
 				F7802756284A964800B68778 /* Views */,
 				F7802758284A969700B68778 /* UIViewImagePicker */,
 				F7802757284A965700B68778 /* Extensions */,
+				F779FB3728B00E0100F8F06D /* CoreDataHelper */,
 				F780274C284A960D00B68778 /* Assets.xcassets */,
 				F780274E284A960D00B68778 /* Preview Content */,
 			);
@@ -98,7 +106,6 @@
 		F7802756284A964800B68778 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F780274A284A960C00B68778 /* ContentView.swift */,
 				F7802763284AAC4800B68778 /* ListView.swift */,
 				F7E83E3B284B408A0056B925 /* PhotoPickerView.swift */,
 				F7E83E3F284B6D440056B925 /* ButtonLabelView.swift */,
@@ -111,7 +118,6 @@
 		F7802757284A965700B68778 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F780275D284A9DE400B68778 /* FileManager + Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -128,8 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				F780275F284A9FB200B68778 /* ImageError.swift */,
-				F7802761284AAAC400B68778 /* ImageModel.swift */,
 				F7E83E39284B399B0056B925 /* Picker.swift */,
+				F779FB3328B00C6E00F8F06D /* ImageModel.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -137,7 +143,6 @@
 		F780275A284A96B700B68778 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				F7802765284AACBA00B68778 /* ListView- ViewModel.swift */,
 				F70947E0284C9C1500BA7C7D /* LocationManager.swift */,
 			);
 			path = ViewModels;
@@ -214,19 +219,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F780275C284A96F900B68778 /* ImagePickerUIView.swift in Sources */,
-				F7802762284AAAC400B68778 /* ImageModel.swift in Sources */,
-				F780274B284A960C00B68778 /* ContentView.swift in Sources */,
 				F7EB6061284BFE30000330C5 /* PhotoDetailScreen.swift in Sources */,
 				F7E83E3C284B408A0056B925 /* PhotoPickerView.swift in Sources */,
 				F70947DF284C925E00BA7C7D /* MapPhotoView.swift in Sources */,
 				F7E83E40284B6D440056B925 /* ButtonLabelView.swift in Sources */,
 				F7802764284AAC4800B68778 /* ListView.swift in Sources */,
-				F7802766284AACBA00B68778 /* ListView- ViewModel.swift in Sources */,
 				F7802749284A960C00B68778 /* FotoNotApp.swift in Sources */,
+				F779FB3528B00C6E00F8F06D /* ImageModel.xcdatamodeld in Sources */,
 				F70947E1284C9C1500BA7C7D /* LocationManager.swift in Sources */,
 				F7802760284A9FB200B68778 /* ImageError.swift in Sources */,
+				F779FB3928B00E2600F8F06D /* DataController.swift in Sources */,
+				F779FB3B28B016CF00F8F06D /* ImageEntity - CoreDataHelper.swift in Sources */,
 				F7E83E3A284B399B0056B925 /* Picker.swift in Sources */,
-				F780275E284A9DE500B68778 /* FileManager + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +370,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -398,6 +403,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -433,6 +439,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F779FB3328B00C6E00F8F06D /* ImageModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F779FB3428B00C6E00F8F06D /* ImageModel.xcdatamodel */,
+			);
+			currentVersion = F779FB3428B00C6E00F8F06D /* ImageModel.xcdatamodel */;
+			path = ImageModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F780273D284A960C00B68778 /* Project object */;
 }

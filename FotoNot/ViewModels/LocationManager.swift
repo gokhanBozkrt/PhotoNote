@@ -9,6 +9,8 @@ import Foundation
 import MapKit
 
 class LocationFetcher: NSObject, CLLocationManagerDelegate {
+   
+    static let example = LocationFetcher() 
     let manager = CLLocationManager()
     var lastKnownLocation: CLLocationCoordinate2D?
 

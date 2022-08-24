@@ -9,11 +9,21 @@ import SwiftUI
 
 @main
 struct FotoNotApp: App {
+    @StateObject var dataController: DataController
+    
+    init() {
+        let dataController = DataController()
+        _dataController = StateObject(wrappedValue: dataController)
+    }
     var body: some Scene {
         WindowGroup {
-           // ContentView()
+         //   ContentView()
            ListView()
-                .environmentObject(VieModel())
+                .environment(\.managedObjectContext, dataController.container.viewContext)
+                .environmentObject(dataController)
+//.environmentObject(VieModel())
+           // TabViewItems()
+                
         }
     }
 }
