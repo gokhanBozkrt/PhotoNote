@@ -43,6 +43,7 @@ class DataController: ObservableObject {
         savedImage.name = "Gokhan"
         savedImage.latitude = 39.941959
         savedImage.longitude = 32.8077479
+        savedImage.creationDate = Date()
         guard let image = UIImage(named: "ExampleImage") else {
             return
         }

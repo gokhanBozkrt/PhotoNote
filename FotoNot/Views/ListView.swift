@@ -11,29 +11,43 @@ import SwiftUI
 struct ListView: View {
     @State private var showPhotoPicker = false
     @FetchRequest(sortDescriptors: []) private var images: FetchedResults<ImageEntity>
- 
+    let columns = [
+        GridItem(.adaptive(minimum: 150))
+    ]
     var body: some View {
         NavigationView {
-            VStack(alignment: .leading)  {
-                 List  {
-                        ForEach(images) { image in
-                                HStack {
-                                    Image(uiImage: image.viewerImage)
-                                    .resizable()
-                                    .scaledToFit()
-                                    .clipShape(Circle())
-                                    .frame(width: 44, height: 44)
-                                  Text(image.imageName)
+            ScrollView  {
+                LazyVGrid(columns: columns) {
+                    ForEach(images) { image in
+                        VStack {
+                            Image(uiImage: image.viewerImage)
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 150, height: 150)
+                             //   .padding()
+                            VStack(spacing: 10) {
+                                Text(image.imageName)
+                                    .font(.headline)
+                                    .foregroundColor(.white)
+                                Text(image.imageRecordDate)
+                                    .font(.caption)
+                                    .foregroundColor(.blue)
                             }
-                           
-
-    
+                            .padding(.vertical)
+                            .frame(maxWidth: .infinity)
+                            .background(.mint.opacity(0.6))
+                            
+                        }
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                        .overlay(
+                       RoundedRectangle(cornerRadius: 10)
+                        .stroke(.mint.opacity(0.6))
+                        )
+                   }
                     }
-                 }.listStyle(.inset)
-                  
-            }
-            .navigationTitle("Foto Notes")
-            .toolbar {
+                 }
+                .navigationTitle("Foto Notes")
+                .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
                         self.showPhotoPicker = true

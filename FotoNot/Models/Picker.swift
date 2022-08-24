@@ -42,7 +42,7 @@ enum Picker {
             }
         } else {
             throw PickerError.unavaliable
-        }
+       }
     }
     struct CameraErrorType {
         let error:Picker.PickerError

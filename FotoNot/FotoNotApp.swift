@@ -17,12 +17,10 @@ struct FotoNotApp: App {
     }
     var body: some Scene {
         WindowGroup {
-         //   ContentView()
            ListView()
                 .environment(\.managedObjectContext, dataController.container.viewContext)
                 .environmentObject(dataController)
-//.environmentObject(VieModel())
-           // TabViewItems()
+
                 
         }
     }

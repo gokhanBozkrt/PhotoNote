@@ -13,6 +13,9 @@ extension ImageEntity {
     var imageName: String {
         name ?? ""
     }
+    var imageRecordDate: String {
+        "\(creationDate?.formatted() ??  "N/A")" 
+    }
     var imageId: String {
         id?.uuidString ?? ""
     }
