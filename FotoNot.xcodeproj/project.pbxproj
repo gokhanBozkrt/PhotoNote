@@ -20,6 +20,7 @@
 		F7802750284A960D00B68778 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F780274F284A960D00B68778 /* Preview Assets.xcassets */; };
 		F780275C284A96F900B68778 /* ImagePickerUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F780275B284A96F900B68778 /* ImagePickerUIView.swift */; };
 		F7802764284AAC4800B68778 /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7802763284AAC4800B68778 /* FavouritesView.swift */; };
+		F7D142B528B95929007877F0 /* ColorAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D142B428B95929007877F0 /* ColorAddition.swift */; };
 		F7E83E3A284B399B0056B925 /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E83E39284B399B0056B925 /* Picker.swift */; };
 		F7E83E3C284B408A0056B925 /* PhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E83E3B284B408A0056B925 /* PhotoPickerView.swift */; };
 		F7E83E40284B6D440056B925 /* ButtonLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E83E3F284B6D440056B925 /* ButtonLabelView.swift */; };
@@ -41,6 +42,7 @@
 		F780274F284A960D00B68778 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F780275B284A96F900B68778 /* ImagePickerUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerUIView.swift; sourceTree = "<group>"; };
 		F7802763284AAC4800B68778 /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
+		F7D142B428B95929007877F0 /* ColorAddition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorAddition.swift; sourceTree = "<group>"; };
 		F7E83E39284B399B0056B925 /* Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
 		F7E83E3B284B408A0056B925 /* PhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerView.swift; sourceTree = "<group>"; };
 		F7E83E3F284B6D440056B925 /* ButtonLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLabelView.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		F7802757284A965700B68778 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F7D142B428B95929007877F0 /* ColorAddition.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				F70947DF284C925E00BA7C7D /* MapPhotoView.swift in Sources */,
 				F7E83E40284B6D440056B925 /* ButtonLabelView.swift in Sources */,
 				F7802764284AAC4800B68778 /* FavouritesView.swift in Sources */,
+				F7D142B528B95929007877F0 /* ColorAddition.swift in Sources */,
 				F7802749284A960C00B68778 /* FotoNotApp.swift in Sources */,
 				F779FB3528B00C6E00F8F06D /* ImageModel.xcdatamodeld in Sources */,
 				F70947E1284C9C1500BA7C7D /* LocationManager.swift in Sources */,
