@@ -60,7 +60,7 @@ struct PhotoPickerView: View {
                         } label: {
                             ButtonLabelView(systemImageName: "camera", textName:"Camera")
                         }
-                        .alert("Error",isPresented: $vm.showCameraAlert) {
+                        .alert("Hata🙅",isPresented: $vm.showCameraAlert) {
                             vm.cameraError?.button
                         } message: {
                             Text(vm.cameraError?.message ?? "")

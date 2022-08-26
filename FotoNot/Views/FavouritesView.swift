@@ -8,9 +8,12 @@
 
 import SwiftUI
 
-struct ListView: View {
+struct FavouritesView: View {
+    
+    static let tag: String? = "Favourites"
     @State private var showPhotoPicker = false
-    @FetchRequest(sortDescriptors: []) private var images: FetchedResults<ImageEntity>
+    @FetchRequest(entity: ImageEntity.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \ImageEntity.creationDate, ascending: true )], predicate: NSPredicate(format: "favourite = true")) var images: FetchedResults<ImageEntity>
+    
     let columns = [
         GridItem(.adaptive(minimum: 150))
     ]
@@ -46,28 +49,14 @@ struct ListView: View {
                    }
                     }
                  }
-                .navigationTitle("Foto Notes")
-                .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
-                        self.showPhotoPicker = true
-                    } label: {
-                    Image(systemName: "plus")
-                    }
-                }
-                
-            }
-            .sheet(isPresented: $showPhotoPicker) {
-                PhotoPickerView()
-            }
-      
+                .navigationTitle("Favourites")
         }
     }
 }
 
-struct ListView_Previews: PreviewProvider {
+struct FavouritesView_Previews: PreviewProvider {
     static var previews: some View {
-        ListView()
+        FavouritesView()
        
     }
 }

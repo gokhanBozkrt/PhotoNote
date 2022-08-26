@@ -17,7 +17,7 @@ struct FotoNotApp: App {
     }
     var body: some Scene {
         WindowGroup {
-           ListView()
+           ContentView()
                 .environment(\.managedObjectContext, dataController.container.viewContext)
                 .environmentObject(dataController)
 
