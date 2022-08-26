@@ -49,6 +49,7 @@ struct HomeView: View {
                        }
                         
                 }
+                        
                 }
                   .background(Color.systemGroupedBackground.ignoresSafeArea())
                 .listStyle(.insetGrouped)

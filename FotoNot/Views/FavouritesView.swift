@@ -48,8 +48,10 @@ struct FavouritesView: View {
                         )
                    }
                     }
+                    .padding()
                  }
                 .navigationTitle("Favourites")
+                .background(Color.systemGroupedBackground.ignoresSafeArea())
         }
     }
 }

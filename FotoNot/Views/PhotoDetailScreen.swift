@@ -38,9 +38,8 @@ struct PhotoDetailScreen: View {
                                 currentAmount = 0
                             }
                         })
-                    
                     )
-                  Spacer()
+                 
                 Button(image.favourite ? "Remove from favourites" : "Add to favourites") {
                     if !image.favourite {
                     isFavourite = true
@@ -52,10 +51,11 @@ struct PhotoDetailScreen: View {
                 }
                 .buttonStyle(.borderedProminent)
                 .padding()
+                Spacer()
             }
             .background(Color.systemGroupedBackground.ignoresSafeArea())
             .navigationTitle(image.imageName)
-        .navigationBarTitleDisplayMode(.inline)
+            .navigationBarTitleDisplayMode(.inline)
         }
     
     func update() {
