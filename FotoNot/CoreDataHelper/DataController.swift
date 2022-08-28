@@ -17,11 +17,11 @@ class DataController: ObservableObject {
         if inMemory {
             container.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: "/dev/null")
         }
-        
         container.loadPersistentStores { sortDescriptor, error in
             if let error = error {
                 fatalError("Fatal error loading store \(error.localizedDescription)")
             }
+            self.container.viewContext.mergePolicy = NSMergePolicy.mergeByPropertyObjectTrump
         }
     }
     

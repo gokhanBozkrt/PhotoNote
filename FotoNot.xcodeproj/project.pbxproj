@@ -12,6 +12,7 @@
 		F713ECB128B6A10F00CB3705 /* PhotoPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F713ECB028B6A10F00CB3705 /* PhotoPickerViewModel.swift */; };
 		F721216128B8F9EA00295E89 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721216028B8F9EA00295E89 /* ContentView.swift */; };
 		F721216328B8FAF600295E89 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721216228B8FAF600295E89 /* HomeView.swift */; };
+		F764566D28B9673D00D434BA /* Photo-MapPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F764566C28B9673D00D434BA /* Photo-MapPickerView.swift */; };
 		F779FB3528B00C6E00F8F06D /* ImageModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F779FB3328B00C6E00F8F06D /* ImageModel.xcdatamodeld */; };
 		F779FB3928B00E2600F8F06D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F779FB3828B00E2600F8F06D /* DataController.swift */; };
 		F779FB3B28B016CF00F8F06D /* ImageEntity - CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F779FB3A28B016CF00F8F06D /* ImageEntity - CoreDataHelper.swift */; };
@@ -33,6 +34,7 @@
 		F713ECB028B6A10F00CB3705 /* PhotoPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerViewModel.swift; sourceTree = "<group>"; };
 		F721216028B8F9EA00295E89 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F721216228B8FAF600295E89 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F764566C28B9673D00D434BA /* Photo-MapPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Photo-MapPickerView.swift"; sourceTree = "<group>"; };
 		F779FB3428B00C6E00F8F06D /* ImageModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ImageModel.xcdatamodel; sourceTree = "<group>"; };
 		F779FB3828B00E2600F8F06D /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		F779FB3A28B016CF00F8F06D /* ImageEntity - CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageEntity - CoreDataHelper.swift"; sourceTree = "<group>"; };
@@ -114,10 +116,11 @@
 			children = (
 				F721216028B8F9EA00295E89 /* ContentView.swift */,
 				F721216228B8FAF600295E89 /* HomeView.swift */,
+				F7EB6060284BFE30000330C5 /* PhotoDetailScreen.swift */,
+				F764566C28B9673D00D434BA /* Photo-MapPickerView.swift */,
 				F7802763284AAC4800B68778 /* FavouritesView.swift */,
 				F7E83E3B284B408A0056B925 /* PhotoPickerView.swift */,
 				F7E83E3F284B6D440056B925 /* ButtonLabelView.swift */,
-				F7EB6060284BFE30000330C5 /* PhotoDetailScreen.swift */,
 				F70947DE284C925E00BA7C7D /* MapPhotoView.swift */,
 			);
 			path = Views;
@@ -235,6 +238,7 @@
 				F7E83E3C284B408A0056B925 /* PhotoPickerView.swift in Sources */,
 				F70947DF284C925E00BA7C7D /* MapPhotoView.swift in Sources */,
 				F7E83E40284B6D440056B925 /* ButtonLabelView.swift in Sources */,
+				F764566D28B9673D00D434BA /* Photo-MapPickerView.swift in Sources */,
 				F7802764284AAC4800B68778 /* FavouritesView.swift in Sources */,
 				F7D142B528B95929007877F0 /* ColorAddition.swift in Sources */,
 				F7802749284A960C00B68778 /* FotoNotApp.swift in Sources */,
