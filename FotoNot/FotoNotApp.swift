@@ -10,6 +10,7 @@ import SwiftUI
 @main
 struct FotoNotApp: App {
     @StateObject var dataController: DataController
+    @StateObject var locationManager = LocationFetcher()
     
     init() {
         let dataController = DataController()
@@ -20,6 +21,7 @@ struct FotoNotApp: App {
            ContentView()
                 .environment(\.managedObjectContext, dataController.container.viewContext)
                 .environmentObject(dataController)
+                .environmentObject(locationManager)
 
                 
         }

@@ -5,8 +5,10 @@
 //  Created by Gokhan Bozkurt on 19.08.2022.
 //
 
+import CoreLocation
 import Foundation
-import UIKit
+import SwiftUI
+
 
 extension ImageEntity {
     
@@ -26,5 +28,12 @@ extension ImageEntity {
             return UIImage(systemName: "note.text")!
         }
     }
+   
+    
+    var coordinate: CLLocationCoordinate2D {
+        CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+    }
+    
+  
     
 }

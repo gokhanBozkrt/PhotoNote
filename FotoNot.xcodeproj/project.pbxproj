@@ -12,7 +12,7 @@
 		F713ECB128B6A10F00CB3705 /* PhotoPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F713ECB028B6A10F00CB3705 /* PhotoPickerViewModel.swift */; };
 		F721216128B8F9EA00295E89 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721216028B8F9EA00295E89 /* ContentView.swift */; };
 		F721216328B8FAF600295E89 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721216228B8FAF600295E89 /* HomeView.swift */; };
-		F764566D28B9673D00D434BA /* Photo-MapPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F764566C28B9673D00D434BA /* Photo-MapPickerView.swift */; };
+		F72D72B228BE7AF1004E45BC /* PhotoPicker-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72D72B128BE7AF1004E45BC /* PhotoPicker-Helper.swift */; };
 		F779FB3528B00C6E00F8F06D /* ImageModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F779FB3328B00C6E00F8F06D /* ImageModel.xcdatamodeld */; };
 		F779FB3928B00E2600F8F06D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F779FB3828B00E2600F8F06D /* DataController.swift */; };
 		F779FB3B28B016CF00F8F06D /* ImageEntity - CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F779FB3A28B016CF00F8F06D /* ImageEntity - CoreDataHelper.swift */; };
@@ -22,10 +22,9 @@
 		F780275C284A96F900B68778 /* ImagePickerUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F780275B284A96F900B68778 /* ImagePickerUIView.swift */; };
 		F7802764284AAC4800B68778 /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7802763284AAC4800B68778 /* FavouritesView.swift */; };
 		F7D142B528B95929007877F0 /* ColorAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D142B428B95929007877F0 /* ColorAddition.swift */; };
-		F7E83E3A284B399B0056B925 /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E83E39284B399B0056B925 /* Picker.swift */; };
 		F7E83E3C284B408A0056B925 /* PhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E83E3B284B408A0056B925 /* PhotoPickerView.swift */; };
 		F7E83E40284B6D440056B925 /* ButtonLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E83E3F284B6D440056B925 /* ButtonLabelView.swift */; };
-		F7EB6061284BFE30000330C5 /* PhotoDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EB6060284BFE30000330C5 /* PhotoDetailScreen.swift */; };
+		F7F8C57A28BE782B00ABD053 /* PhotoDetailScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F8C57928BE782B00ABD053 /* PhotoDetailScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +33,7 @@
 		F713ECB028B6A10F00CB3705 /* PhotoPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerViewModel.swift; sourceTree = "<group>"; };
 		F721216028B8F9EA00295E89 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F721216228B8FAF600295E89 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		F764566C28B9673D00D434BA /* Photo-MapPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Photo-MapPickerView.swift"; sourceTree = "<group>"; };
+		F72D72B128BE7AF1004E45BC /* PhotoPicker-Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoPicker-Helper.swift"; sourceTree = "<group>"; };
 		F779FB3428B00C6E00F8F06D /* ImageModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ImageModel.xcdatamodel; sourceTree = "<group>"; };
 		F779FB3828B00E2600F8F06D /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		F779FB3A28B016CF00F8F06D /* ImageEntity - CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageEntity - CoreDataHelper.swift"; sourceTree = "<group>"; };
@@ -45,10 +44,9 @@
 		F780275B284A96F900B68778 /* ImagePickerUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerUIView.swift; sourceTree = "<group>"; };
 		F7802763284AAC4800B68778 /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
 		F7D142B428B95929007877F0 /* ColorAddition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorAddition.swift; sourceTree = "<group>"; };
-		F7E83E39284B399B0056B925 /* Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
 		F7E83E3B284B408A0056B925 /* PhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerView.swift; sourceTree = "<group>"; };
 		F7E83E3F284B6D440056B925 /* ButtonLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLabelView.swift; sourceTree = "<group>"; };
-		F7EB6060284BFE30000330C5 /* PhotoDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailScreen.swift; sourceTree = "<group>"; };
+		F7F8C57928BE782B00ABD053 /* PhotoDetailScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +114,7 @@
 			children = (
 				F721216028B8F9EA00295E89 /* ContentView.swift */,
 				F721216228B8FAF600295E89 /* HomeView.swift */,
-				F7EB6060284BFE30000330C5 /* PhotoDetailScreen.swift */,
-				F764566C28B9673D00D434BA /* Photo-MapPickerView.swift */,
+				F7F8C57928BE782B00ABD053 /* PhotoDetailScreenView.swift */,
 				F7802763284AAC4800B68778 /* FavouritesView.swift */,
 				F7E83E3B284B408A0056B925 /* PhotoPickerView.swift */,
 				F7E83E3F284B6D440056B925 /* ButtonLabelView.swift */,
@@ -145,8 +142,8 @@
 		F7802759284A96AD00B68778 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F7E83E39284B399B0056B925 /* Picker.swift */,
 				F779FB3328B00C6E00F8F06D /* ImageModel.xcdatamodeld */,
+				F72D72B128BE7AF1004E45BC /* PhotoPicker-Helper.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -154,8 +151,8 @@
 		F780275A284A96B700B68778 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				F70947E0284C9C1500BA7C7D /* LocationManager.swift */,
 				F713ECB028B6A10F00CB3705 /* PhotoPickerViewModel.swift */,
+				F70947E0284C9C1500BA7C7D /* LocationManager.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -232,13 +229,13 @@
 			files = (
 				F780275C284A96F900B68778 /* ImagePickerUIView.swift in Sources */,
 				F713ECB128B6A10F00CB3705 /* PhotoPickerViewModel.swift in Sources */,
+				F7F8C57A28BE782B00ABD053 /* PhotoDetailScreenView.swift in Sources */,
 				F721216128B8F9EA00295E89 /* ContentView.swift in Sources */,
 				F721216328B8FAF600295E89 /* HomeView.swift in Sources */,
-				F7EB6061284BFE30000330C5 /* PhotoDetailScreen.swift in Sources */,
 				F7E83E3C284B408A0056B925 /* PhotoPickerView.swift in Sources */,
 				F70947DF284C925E00BA7C7D /* MapPhotoView.swift in Sources */,
 				F7E83E40284B6D440056B925 /* ButtonLabelView.swift in Sources */,
-				F764566D28B9673D00D434BA /* Photo-MapPickerView.swift in Sources */,
+				F72D72B228BE7AF1004E45BC /* PhotoPicker-Helper.swift in Sources */,
 				F7802764284AAC4800B68778 /* FavouritesView.swift in Sources */,
 				F7D142B528B95929007877F0 /* ColorAddition.swift in Sources */,
 				F7802749284A960C00B68778 /* FotoNotApp.swift in Sources */,
@@ -246,7 +243,6 @@
 				F70947E1284C9C1500BA7C7D /* LocationManager.swift in Sources */,
 				F779FB3928B00E2600F8F06D /* DataController.swift in Sources */,
 				F779FB3B28B016CF00F8F06D /* ImageEntity - CoreDataHelper.swift in Sources */,
-				F7E83E3A284B399B0056B925 /* Picker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

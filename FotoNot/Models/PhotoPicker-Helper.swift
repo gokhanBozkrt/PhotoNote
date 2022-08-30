@@ -1,15 +1,15 @@
 //
-//  Picker.swift
+//  PhotoPicker-Helper.swift
 //  FotoNot
 //
-//  Created by Gökhan Bozkurt on 4.06.2022.
+//  Created by Gokhan Bozkurt on 30.08.2022.
 //
 
 import AVFoundation
 import Foundation
 import SwiftUI
 
-enum Picker {
+enum PickerModel {
     enum Source {
         case library,camera
     }
@@ -45,7 +45,7 @@ enum Picker {
        }
     }
     struct CameraErrorType {
-        let error:Picker.PickerError
+        let error:PickerModel.PickerError
         var  message: String {
             error.localizedDescription
         }
@@ -53,3 +53,4 @@ enum Picker {
     }
     
 }
+

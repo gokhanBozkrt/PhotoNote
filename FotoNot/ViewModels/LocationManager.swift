@@ -8,13 +8,11 @@ import CoreLocation
 import Foundation
 import MapKit
 
-class LocationFetcher: NSObject, CLLocationManagerDelegate {
-   
-    static let example = LocationFetcher() 
+class LocationFetcher: NSObject, CLLocationManagerDelegate,ObservableObject {
     let manager = CLLocationManager()
     var lastKnownLocation: CLLocationCoordinate2D?
 
-    var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 32 , longitude: 32) , span: MKCoordinateSpan(latitudeDelta: 25, longitudeDelta: 25))
+    var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 32 , longitude: 32) , span: MKCoordinateSpan(latitudeDelta: 5, longitudeDelta: 5))
     
     
     override init() {
@@ -30,7 +28,7 @@ class LocationFetcher: NSObject, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         lastKnownLocation = locations.first?.coordinate
         
-        mapRegion = MKCoordinateRegion(center: lastKnownLocation!, span: MKCoordinateSpan(latitudeDelta: 25, longitudeDelta: 25))
+        mapRegion = MKCoordinateRegion(center: lastKnownLocation!, span: MKCoordinateSpan(latitudeDelta: 5, longitudeDelta: 5))
     }
     
 

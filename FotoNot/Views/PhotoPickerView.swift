@@ -16,7 +16,8 @@ struct PhotoPickerView: View {
     
     @EnvironmentObject var dataController: DataController
     @Environment(\.managedObjectContext) var managedObjectContext
-    
+    @EnvironmentObject var locationManager: LocationFetcher
+
     
     var body: some View {
         NavigationView {
@@ -80,8 +81,8 @@ struct PhotoPickerView: View {
                             let imageEntity = ImageEntity(context: managedObjectContext)
                               imageEntity.name = imageName
                               imageEntity.id = UUID()
-                              imageEntity.latitude = 39.941959
-                              imageEntity.longitude = 32.8077479
+                            imageEntity.latitude = locationManager.lastKnownLocation?.latitude ?? 32
+                            imageEntity.longitude = locationManager.lastKnownLocation?.longitude ?? 32
                               imageEntity.creationDate = Date()
                               guard let savedImage = image else {
                                   return
@@ -103,6 +104,9 @@ struct PhotoPickerView: View {
             .sheet(isPresented: $vm.showPicker) {
                 ImagePicker(sourceType: vm.source == .library ? .photoLibrary : .camera, selectedImage: $image)
         }
+            .onAppear {
+                locationManager.start()
+            }
         }
     }
     
