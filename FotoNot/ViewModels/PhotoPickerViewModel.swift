@@ -8,7 +8,7 @@
 import Foundation
 
 extension PhotoPickerView {
-    class ViewModel: ObservableObject {
+@MainActor class ViewModel: ObservableObject {
         @Published var source: PickerModel.Source = .library
         @Published var cameraError: PickerModel.CameraErrorType?
         @Published var showCameraAlert = false
