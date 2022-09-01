@@ -11,7 +11,7 @@ import SwiftUI
 struct FavouritesView: View {
     
     static let tag: String? = "Favourites"
-    @State private var showPhotoPicker = false
+   
     @FetchRequest(entity: ImageEntity.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \ImageEntity.creationDate, ascending: true )], predicate: NSPredicate(format: "favourite = true")) var images: FetchedResults<ImageEntity>
     
     let columns = [
@@ -22,32 +22,7 @@ struct FavouritesView: View {
             ScrollView  {
                 LazyVGrid(columns: columns) {
                     ForEach(images) { image in
-                        LazyVStack {
-                            Image(uiImage: image.viewerImage)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(height: 150)
-                            
-                            VStack(spacing: 10) {
-                                Text(image.imageName)
-                                    .font(.headline)
-                                    .foregroundColor(.white)
-                                Text(image.imageRecordDate)
-                                    .font(.caption2)
-                                    .fontWeight(.semibold)
-                                    .foregroundColor(.white)
-                                    .shadow(radius: 25)
-                            }
-                            .padding(.vertical)
-                            .frame(maxWidth: .infinity)
-                            .background(.gray.opacity(0.6))
-                            
-                        }
-                        .clipShape(RoundedRectangle(cornerRadius: 10))
-                        .overlay(
-                       RoundedRectangle(cornerRadius: 10)
-                        .stroke(.white.opacity(0.3))
-                        )
+                       GridItemsView(image: image)
                    }
                     }
                     .padding()

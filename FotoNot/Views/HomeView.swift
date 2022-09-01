@@ -22,52 +22,29 @@ struct HomeView: View {
     
     var body: some View {
         NavigationView {
-            ScrollView {
+            List {
                 ForEach(sortedImage(for: images)) { image in
                     NavigationLink {
-                        PhotoDetailScreen(image: image)
+                       PhotoDetailView(image: image)
                     } label: {
-                        LazyVStack(alignment: .leading) {
-                            HStack(spacing:10) {
-                                Image(uiImage: image.viewerImage)
-                                    .resizable()
-                                    .scaledToFill()
-                                    .frame(width: 50, height: 50)
-                                    .clipShape(Circle())
-                                VStack(alignment: .leading,spacing: 3) {
-                                    Text(image.imageName)
-                                        .font(.title)
-                                        .foregroundColor(.black.opacity(0.8))
-                                    Text(image.imageRecordDate)
-                                        .font(.caption2)
-                                        .foregroundColor(.gray)
-                                    
-                                }
-                                
-                                if image.favourite {
-                                    Spacer()
-                                    Image(systemName: "heart.fill")
-                                        .foregroundColor(.red)
-                                        .accessibilityLabel("This is a favourite image")
-                                }
-                            }
-                          
-                        }
-                        .padding()
-                        .background(Color.secondarySystemGroupedBackground)
+                    ImageListView(image: image)
                     }
                     
                 }
                 .onDelete { offsets in
                     for offset in offsets {
-                        let image = images[offset]
+                        let allImages = sortedImage(for: images)
+                        let image = allImages[offset]
                         dataController.delete(image)
                     }
                     dataController.save()
                     
                 }
                 
-            }.navigationTitle("Foto Notes")
+            }
+            .listStyle(.inset)
+            .listRowBackground(Color.white)
+            .navigationTitle("Foto Notes")
                 .background(Color.systemGroupedBackground.ignoresSafeArea())
                 .padding(.top)
                 .toolbar {
@@ -109,7 +86,7 @@ struct HomeView: View {
             return images.sorted { $0.imageRecordDate > $1.imageRecordDate }
         case .optimized:
             return images.sorted { $0.imageRecordDate < $1.imageRecordDate }
-                
+
         }
     }
     

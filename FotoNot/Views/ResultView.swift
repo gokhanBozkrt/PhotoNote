@@ -27,7 +27,7 @@ struct ResultView: View {
                 case .failed:
                     Text("Please try again")
                 }
-            }
+            } 
 
         } .task {
             await vm.fetchNearPlaces()
