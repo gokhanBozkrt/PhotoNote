@@ -37,7 +37,7 @@ struct ImageListView: View {
           
         }
         .padding()
-        .background(Color.secondarySystemGroupedBackground)
+        //.background(Color.secondarySystemGroupedBackground)
     }
 }
 

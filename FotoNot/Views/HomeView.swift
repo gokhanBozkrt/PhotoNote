@@ -43,9 +43,8 @@ struct HomeView: View {
                 
             }
             .listStyle(.inset)
-            .listRowBackground(Color.white)
             .navigationTitle("Foto Notes")
-                .background(Color.systemGroupedBackground.ignoresSafeArea())
+                .background(Color.secondarySystemGroupedBackground.ignoresSafeArea())
                 .padding(.top)
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {

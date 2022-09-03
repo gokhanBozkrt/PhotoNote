@@ -13,7 +13,8 @@ struct GridItemsView: View {
         VStack {
             Image(uiImage: image.viewerImage)
                 .resizable()
-                .scaledToFit()
+             //   .scaledToFit()
+                .frame(maxWidth: .infinity)
                 .frame(height: 150)
             
             VStack(spacing: 10) {
@@ -28,7 +29,7 @@ struct GridItemsView: View {
             }
             .padding(.vertical)
             .frame(maxWidth: .infinity)
-            .background(.gray.opacity(0.6))
+            .background(.blue.opacity(0.4))
             
         }
         .clipShape(RoundedRectangle(cornerRadius: 10))
