@@ -1,7 +1,7 @@
 # Photo Note
 This app helps you take visual notes either capturing a new photo or choosing your photo library.
 Besides app requests to track your current location while using app,
-so based on your location Wikipedia Api brings us important places nearby you. 
+so based on your location Wikimedia Api brings us important places nearby you. 
 
 
 ## Features
@@ -20,7 +20,7 @@ so based on your location Wikipedia Api brings us important places nearby you.
 - Core Data for data persistency also image saving by using Core Data
 - MapKit, CoreLocation for user's current location 
 - Swift Concurrency
-- Wikipedia Api 
+- Wikimedia Api 
 
 
 
