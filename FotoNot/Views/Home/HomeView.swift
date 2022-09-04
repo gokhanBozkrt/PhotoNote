@@ -43,7 +43,7 @@ struct HomeView: View {
                 
             }
             .listStyle(.inset)
-            .navigationTitle("Foto Notes")
+            .navigationTitle("Photo Notes")
                 .background(Color.secondarySystemGroupedBackground.ignoresSafeArea())
                 .padding(.top)
                 .toolbar {

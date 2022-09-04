@@ -22,8 +22,12 @@ struct FotoNotApp: App {
                 .environment(\.managedObjectContext, dataController.container.viewContext)
                 .environmentObject(dataController)
                 .environmentObject(locationManager)
+                .onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification), perform: save)
 
                 
         }
+    }
+    func save(_ note: Notification) {
+        dataController.save()
     }
 }

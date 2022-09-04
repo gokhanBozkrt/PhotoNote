@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ImageListView: View {
-    let image: ImageEntity
+    @ObservedObject var  image: ImageEntity
     var body: some View {
         LazyVStack(alignment: .leading) {
             HStack(spacing:10) {
@@ -37,14 +37,9 @@ struct ImageListView: View {
           
         }
         .padding()
-        //.background(Color.secondarySystemGroupedBackground)
+        
     }
 }
 
 
 
-//struct ImageListView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ImageListView()
-//    }
-//}

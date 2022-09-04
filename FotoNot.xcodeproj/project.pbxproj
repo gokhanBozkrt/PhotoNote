@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F70947E1284C9C1500BA7C7D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70947E0284C9C1500BA7C7D /* LocationManager.swift */; };
 		F713ECB128B6A10F00CB3705 /* PhotoPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F713ECB028B6A10F00CB3705 /* PhotoPickerViewModel.swift */; };
+		F71A0B1628C3EB7E00007D01 /* Binding-Onchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71A0B1528C3EB7E00007D01 /* Binding-Onchange.swift */; };
 		F721216128B8F9EA00295E89 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721216028B8F9EA00295E89 /* ContentView.swift */; };
 		F721216328B8FAF600295E89 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721216228B8FAF600295E89 /* HomeView.swift */; };
 		F72D72B228BE7AF1004E45BC /* PhotoPicker-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72D72B128BE7AF1004E45BC /* PhotoPicker-Helper.swift */; };
@@ -36,13 +37,14 @@
 /* Begin PBXFileReference section */
 		F70947E0284C9C1500BA7C7D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		F713ECB028B6A10F00CB3705 /* PhotoPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerViewModel.swift; sourceTree = "<group>"; };
+		F71A0B1528C3EB7E00007D01 /* Binding-Onchange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-Onchange.swift"; sourceTree = "<group>"; };
 		F721216028B8F9EA00295E89 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F721216228B8FAF600295E89 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F72D72B128BE7AF1004E45BC /* PhotoPicker-Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoPicker-Helper.swift"; sourceTree = "<group>"; };
 		F779FB3428B00C6E00F8F06D /* ImageModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ImageModel.xcdatamodel; sourceTree = "<group>"; };
 		F779FB3828B00E2600F8F06D /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		F779FB3A28B016CF00F8F06D /* ImageEntity - CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageEntity - CoreDataHelper.swift"; sourceTree = "<group>"; };
-		F7802745284A960C00B68778 /* FotoNot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FotoNot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7802745284A960C00B68778 /* PhotoNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7802748284A960C00B68778 /* FotoNotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoNotApp.swift; sourceTree = "<group>"; };
 		F780274C284A960D00B68778 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F780274F284A960D00B68778 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -72,6 +74,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F758523128C47927002D8568 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F7E83E3B284B408A0056B925 /* PhotoPickerView.swift */,
+				F721216228B8FAF600295E89 /* HomeView.swift */,
+				F78B135F28C128680031C3D3 /* ImageListView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F758523228C47941002D8568 /* PhotoDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F78B136528C12C4D0031C3D3 /* PhotoMapView.swift */,
+				F78B136128C1299D0031C3D3 /* PhotoDetailView.swift */,
+				F79E844A28BFE01A00468218 /* ResultView.swift */,
+			);
+			path = PhotoDetail;
+			sourceTree = "<group>";
+		};
+		F758523328C4796D002D8568 /* Favourites */ = {
+			isa = PBXGroup;
+			children = (
+				F7802763284AAC4800B68778 /* FavouritesView.swift */,
+				F78B136728C12FC20031C3D3 /* GridItemsView.swift */,
+			);
+			path = Favourites;
+			sourceTree = "<group>";
+		};
+		F758523428C47993002D8568 /* ButtonLabel */ = {
+			isa = PBXGroup;
+			children = (
+				F7E83E3F284B6D440056B925 /* ButtonLabelView.swift */,
+			);
+			path = ButtonLabel;
+			sourceTree = "<group>";
+		};
 		F779FB3728B00E0100F8F06D /* CoreDataHelper */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,7 +131,7 @@
 		F7802746284A960C00B68778 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F7802745284A960C00B68778 /* FotoNot.app */,
+				F7802745284A960C00B68778 /* PhotoNote.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,15 +165,10 @@
 			isa = PBXGroup;
 			children = (
 				F721216028B8F9EA00295E89 /* ContentView.swift */,
-				F721216228B8FAF600295E89 /* HomeView.swift */,
-				F78B135F28C128680031C3D3 /* ImageListView.swift */,
-				F78B136128C1299D0031C3D3 /* PhotoDetailView.swift */,
-				F78B136528C12C4D0031C3D3 /* PhotoMapView.swift */,
-				F79E844A28BFE01A00468218 /* ResultView.swift */,
-				F7802763284AAC4800B68778 /* FavouritesView.swift */,
-				F78B136728C12FC20031C3D3 /* GridItemsView.swift */,
-				F7E83E3B284B408A0056B925 /* PhotoPickerView.swift */,
-				F7E83E3F284B6D440056B925 /* ButtonLabelView.swift */,
+				F758523128C47927002D8568 /* Home */,
+				F758523228C47941002D8568 /* PhotoDetail */,
+				F758523328C4796D002D8568 /* Favourites */,
+				F758523428C47993002D8568 /* ButtonLabel */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -144,6 +178,7 @@
 			children = (
 				F7D142B428B95929007877F0 /* ColorAddition.swift */,
 				F7DA91AC28BF7EE300F964F0 /* URLSession.swift */,
+				F71A0B1528C3EB7E00007D01 /* Binding-Onchange.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -200,7 +235,7 @@
 			);
 			name = FotoNot;
 			productName = FotoNot;
-			productReference = F7802745284A960C00B68778 /* FotoNot.app */;
+			productReference = F7802745284A960C00B68778 /* PhotoNote.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -266,6 +301,7 @@
 				F78B136028C128690031C3D3 /* ImageListView.swift in Sources */,
 				F7E83E40284B6D440056B925 /* ButtonLabelView.swift in Sources */,
 				F79E844D28BFE1E200468218 /* ResultViewModel.swift in Sources */,
+				F71A0B1628C3EB7E00007D01 /* Binding-Onchange.swift in Sources */,
 				F72D72B228BE7AF1004E45BC /* PhotoPicker-Helper.swift in Sources */,
 				F7802764284AAC4800B68778 /* FavouritesView.swift in Sources */,
 				F78B136828C12FC20031C3D3 /* GridItemsView.swift in Sources */,
@@ -407,11 +443,12 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				INFOPLIST_KEY_NSCameraUsageDescription = "Kamera ile foto çekmek ister misin?";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Notların konumu kayıt etmemiz için lokasyonuna erişmekmek istiyoruz.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera so you can capture pictures.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to access your location to show you nearby places where you take a picture";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
@@ -421,7 +458,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gokhan.bozkurt.FotoNot;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PhotoNote;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -440,11 +477,12 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				INFOPLIST_KEY_NSCameraUsageDescription = "Kamera ile foto çekmek ister misin?";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Notların konumu kayıt etmemiz için lokasyonuna erişmekmek istiyoruz.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera so you can capture pictures.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to access your location to show you nearby places where you take a picture";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
@@ -454,7 +492,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gokhan.bozkurt.FotoNot;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PhotoNote;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

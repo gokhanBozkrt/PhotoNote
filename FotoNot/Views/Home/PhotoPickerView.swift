@@ -39,7 +39,7 @@ struct PhotoPickerView: View {
                 }
                 
                 VStack {
-                    TextField("Foto Adı", text: $imageName)
+                    TextField("Title", text: $imageName)
                         .font(.headline)
                         .foregroundColor(Color.black)
                         .disableAutocorrection(true)
@@ -61,7 +61,7 @@ struct PhotoPickerView: View {
                         } label: {
                             ButtonLabelView(systemImageName: "camera", textName:"Camera")
                         }
-                        .alert("Hata🙅",isPresented: $vm.showCameraAlert) {
+                        .alert("Error🙅",isPresented: $vm.showCameraAlert) {
                             vm.cameraError?.button
                         } message: {
                             Text(vm.cameraError?.message ?? "")
@@ -99,7 +99,7 @@ struct PhotoPickerView: View {
                 }
                 .padding()
                Spacer()
-            }.navigationTitle("Foto Seç")
+            }.navigationTitle("Coose Photo")
             .navigationBarTitleDisplayMode(.inline)            
             .sheet(isPresented: $vm.showPicker) {
                 ImagePicker(sourceType: vm.source == .library ? .photoLibrary : .camera, selectedImage: $image)
